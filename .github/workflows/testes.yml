@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Run a multi-line script
         run: |
-          cd ./Ambiente
+          cd Ambiente
           docker-compose up -d
           docker-compose ps
           sleep 5s
