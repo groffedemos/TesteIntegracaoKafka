@@ -19,4 +19,8 @@ jobs:
     steps:
       - name: Run a multi-line script
         run: |
-          docker images
+          cd ./Ambiente
+          docker-compose up -d
+          docker-compose ps
+          sleep 5s
+          docker-compose ps
