@@ -24,7 +24,7 @@ jobs:
           cd ./Ambiente
           docker-compose up -d
       - name: Run a multi-line script
-        run:
+        run: |
           cd ./Ambiente
           docker-compose ps
       - name: Run a multi-line script
