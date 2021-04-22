@@ -17,6 +17,7 @@ jobs:
         image: spotify/kafka
         env:
           ADVERTISED_PORT: 9092
+          ADVERTISED_HOST: kafka
         ports:
           - 9092:9092
           - 2181:2181
