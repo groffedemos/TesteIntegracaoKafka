@@ -24,6 +24,6 @@ jobs:
           ls
           cd ./Ambiente
           docker-compose up -d
-          docker-compose ps
-          sleep 5s
+      - name: Run a multi-line script
+        run: |
           docker-compose ps
