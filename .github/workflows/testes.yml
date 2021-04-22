@@ -30,7 +30,7 @@ jobs:
       - name: Teste envio mensagens
         run: |
           cd ./EnvioKafka
-          dotnet run "0.0.0.0:9092" "topic-teste" "1" "2" "tres" "quartro"
+          dotnet run "kafka" "topic-teste" "1" "2" "tres" "quartro"
       - name: Run a multi-line script
         run: |
           cd ./Ambiente
