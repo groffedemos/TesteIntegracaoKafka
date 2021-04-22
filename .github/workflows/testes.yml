@@ -27,7 +27,7 @@ jobs:
       - name: Teste envio mensagens
         run: |
           cd ./EnvioKafka
-          sudo dotnet run "127.0.0.1:9092" "topic-teste" "1" "2" "tres" "quartro"
+          sudo dotnet run "kafka:9092" "topic-teste" "1" "2" "tres" "quartro"
       - name: Run a multi-line script
         run: |
           cd ./Ambiente
