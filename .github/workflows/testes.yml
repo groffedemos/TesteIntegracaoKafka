@@ -18,8 +18,8 @@ jobs:
         env:
           ADVERTISED_PORT: 9092
         ports:
-          - 9092/tcp
-          - 2181/tcp
+          - 9092:9092
+          - 2181:2181
 
     steps:
       - name: Checkout
