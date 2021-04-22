@@ -19,6 +19,7 @@ jobs:
     steps:
       - name: Run a multi-line script
         run: |
+          ls
           cd Ambiente
           docker-compose up -d
           docker-compose ps
