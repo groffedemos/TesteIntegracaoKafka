@@ -49,7 +49,7 @@ jobs:
         run: |
           cd ./EnvioKafka
           sleep 20s
-          dotnet run "0.0.0.0:9092" "topic-teste" "1" "2" "tres" "quartro"
+          dotnet run "localhost:9092" "topic-teste" "1" "2" "tres" "quartro"
       - name: Run a multi-line script
         run: |
           cd ./Ambiente
