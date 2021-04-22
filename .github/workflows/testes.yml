@@ -28,9 +28,8 @@ jobs:
           docker-compose up -d
       - name: Teste envio mensagens
         run: |
-          sleep 15s
           cd ./EnvioKafka
-          sudo dotnet run "127.0.0.1:9093" "topic-teste" "1" "2" "tres" "quartro"
+          sudo dotnet run "localhost:9093" "topic-teste" "1" "2" "tres" "quartro"
       - name: Run a multi-line script
         run: |
           cd ./Ambiente
